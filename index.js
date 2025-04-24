@@ -42,6 +42,10 @@ app.post('/append-file', (req, res) => {
     var today = new Date();
     var date = today.getFullYear() + '-' + (today.getMonth() + 1) + '-' + today.getDate();
     const isNewFile = !fs.existsSync(`./public/logs/${date}.csv`);
+    const isFolderExist = fs.existsSync('./public/logs');
+    if(!isFolderExist){
+        fs.mkdirSync('./public/logs');
+    }
 
     if(isNewFile){
         fs.appendFile(`./public/logs/${date}.csv`, `学校所在地,学校区分,その他\n${content.prefecture},${content.classification},${content.university}\n`, 'utf8', (err) => {
