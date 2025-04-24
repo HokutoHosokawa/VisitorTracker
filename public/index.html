@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>出身・学年確認</title>
+    <link rel="stylesheet" type="text/css" href="css/index.css">
+</head>
+<body>
+    <div class="tabs">
+        <div class="tab" onclick="showContent(0)">日本の方</div>
+        <div class="tab" onclick="showContent(1)">外国の方(From overseas)</div>
+    </div>
+
+    <div class="content" id="content-0">
+        <div class="overflow-hidden">
+            <ul class="include-accordion scroll-control" style="float: left;">
+                <li>
+                    <button class="accordionBtn root" type="button">電通大</button>
+                    <!--I類、II類、III類、夜間→それぞれのプログラムor学年-->
+                    <ul>
+                        <li>
+                            <button class="accordionBtn middle" type="button">I類</button>
+                            <ul>
+                                <input type="radio" name="dentsu" class="radio" id="dentsu1" value="dentsu1"><label for="dentsu1">1年生</label><br>
+                                <input type="radio" name="dentsu" class="radio" id="dentsu2" value="dentsu2"><label for="dentsu2">2年生</label><br>
+                                <li>
+                                    <button class="accordionBtn children" type="button">メディア情報学</button>
+                                    <ul>
+                                        <input type="radio" name="dentsu" class="radio" id="media0" value="media0"><label for="media0">2年生</label><br>
+                                        <input type="radio" name="dentsu" class="radio" id="media1" value="media1"><label for="media1">3年生</label><br>
+                                        <input type="radio" name="dentsu" class="radio" id="media2" value="media2"><label for="media2">4年生</label>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <button class="accordionBtn children" type="button">経営・社会情報学</button>
+                                    <ul>
+                                        <input type="radio" name="dentsu" class="radio" id="management0" value="management0"><label for="management0">2年生</label><br>
+                                        <input type="radio" name="dentsu" class="radio" id="management1" value="management1"><label for="management1">3年生</label><br>
+                                        <input type="radio" name="dentsu" class="radio" id="management2" value="management2"><label for="management2">4年生</label>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <button class="accordionBtn children" type="button">情報数理工学</button>
+                                    <ul>
+                                        <input type="radio" name="dentsu" class="radio" id="information0" value="information0"><label for="information0">2年生</label><br>
+                                        <input type="radio" name="dentsu" class="radio" id="information1" value="information1"><label for="information1">3年生</label><br>
+                                        <input type="radio" name="dentsu" class="radio" id="information2" value="information2"><label for="information2">4年生</label>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <button class="accordionBtn children" type="button">コンピュータサイエンス</button>
+                                    <ul>
+                                        <input type="radio" name="dentsu" class="radio" id="computer0" value="computer0"><label for="computer0">2年生</label><br>
+                                        <input type="radio" name="dentsu" class="radio" id="computer1" value="computer1"><label for="computer1">3年生</label><br>
+                                        <input type="radio" name="dentsu" class="radio" id="computer2" value="computer2"><label for="computer2">4年生</label>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <button class="accordionBtn children" type="button">データ思考・データサイエンス</button>
+                                    <ul>
+                                        <input type="radio" name="dentsu" class="radio" id="data0" value="data0"><label for="data0">2年生</label><br>
+                                        <input type="radio" name="dentsu" class="radio" id="data1" value="data1"><label for="data1">3年生</label><br>
+                                        <input type="radio" name="dentsu" class="radio" id="data2" value="data2"><label for="data2">4年生</label>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <button class="accordionBtn middle" type="button">II類</button>
+                            <ul>
+                                <input type="radio" name="dentsu" class="radio" id="dentsu3" value="dentsu3"><label for="dentsu3">1年生</label><br>
+                                <input type="radio" name="dentsu" class="radio" id="dentsu4" value="dentsu4"><label for="dentsu4">2年生</label><br>
+                                <li>
+                                    <button class="accordionBtn children" type="button">セキュリティ情報学</button>
+                                    <ul>
+                                        <input type="radio" name="dentsu" class="radio" id="security0" value="security0"><label for="security0">2年生</label><br>
+                                        <input type="radio" name="dentsu" class="radio" id="security1" value="security1"><label for="security1">3年生</label><br>
+                                        <input type="radio" name="dentsu" class="radio" id="security2" value="security2"><label for="security2">4年生</label>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <button class="accordionBtn children" type="button">情報通信工学</button>
+                                    <ul>
+                                        <input type="radio" name="dentsu" class="radio" id="communication0" value="communication0"><label for="communication0">2年生</label><br>
+                                        <input type="radio" name="dentsu" class="radio" id="communication1" value="communication1"><label for="communication1">3年生</label><br>
+                                        <input type="radio" name="dentsu" class="radio" id="communication2" value="communication2"><label for="communication2">4年生</label>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <button class="accordionBtn children" type="button">電子情報学</button>
+                                    <ul>
+                                        <input type="radio" name="dentsu" class="radio" id="electronic0" value="electronic0"><label for="electronic0">2年生</label><br>
+                                        <input type="radio" name="dentsu" class="radio" id="electronic1" value="electronic1"><label for="electronic1">3年生</label><br>
+                                        <input type="radio" name="dentsu" class="radio" id="electronic2" value="electronic2"><label for="electronic2">4年生</label>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <button class="accordionBtn children" type="button">計測・制御システム</button>
+                                    <ul>
+                                        <input type="radio" name="dentsu" class="radio" id="control0" value="control0"><label for="control0">2年生</label><br>
+                                        <input type="radio" name="dentsu" class="radio" id="control1" value="control1"><label for="control1">3年生</label><br>
+                                        <input type="radio" name="dentsu" class="radio" id="control2" value="control2"><label for="control2">4年生</label>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <button class="accordionBtn children" type="button">先端ロボティクス</button>
+                                    <ul>
+                                        <input type="radio" name="dentsu" class="radio" id="robotics0" value="robotics0"><label for="robotics0">2年生</label><br>
+                                        <input type="radio" name="dentsu" class="radio" id="robotics1" value="robotics1"><label for="robotics1">3年生</label><br>
+                                        <input type="radio" name="dentsu" class="radio" id="robotics2" value="robotics2"><label for="robotics2">4年生</label>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <button class="accordionBtn middle" type="button">III類</button>
+                            <ul>
+                                <input type="radio" name="dentsu" class="radio" id="dentsu5" value="dentsu5"><label for="dentsu5">1年生</label><br>
+                                <input type="radio" name="dentsu" class="radio" id="dentsu6" value="dentsu6"><label for="dentsu6">2年生</label><br>
+                                <li>
+                                    <button class="accordionBtn children" type="button">機械システム</button>
+                                    <ul>
+                                        <input type="radio" name="dentsu" class="radio" id="mechanical0" value="mechanical0"><label for="mechanical0">2年生</label><br>
+                                        <input type="radio" name="dentsu" class="radio" id="mechanical1" value="mechanical1"><label for="mechanical1">3年生</label><br>
+                                        <input type="radio" name="dentsu" class="radio" id="mechanical2" value="mechanical2"><label for="mechanical2">4年生</label>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <button class="accordionBtn children" type="button">電子工学</button>
+                                    <ul>
+                                        <input type="radio" name="dentsu" class="radio" id="electrical0" value="electrical0"><label for="electrical0">2年生</label><br>
+                                        <input type="radio" name="dentsu" class="radio" id="electrical1" value="electrical1"><label for="electrical1">3年生</label><br>
+                                        <input type="radio" name="dentsu" class="radio" id="electrical2" value="electrical2"><label for="electrical2">4年生</label>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <button class="accordionBtn children" type="button">光工学</button>
+                                    <ul>
+                                        <input type="radio" name="dentsu" class="radio" id="optical0" value="optical0"><label for="optical0">2年生</label><br>
+                                        <input type="radio" name="dentsu" class="radio" id="optical1" value="optical1"><label for="optical1">3年生</label><br>
+                                        <input type="radio" name="dentsu" class="radio" id="optical2" value="optical2"><label for="optical2">4年生</label>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <button class="accordionBtn children" type="button">物理工学</button>
+                                    <ul>
+                                        <input type="radio" name="dentsu" class="radio" id="physics0" value="physics0"><label for="physics0">2年生</label><br>
+                                        <input type="radio" name="dentsu" class="radio" id="physics1" value="physics1"><label for="physics1">3年生</label><br>
+                                        <input type="radio" name="dentsu" class="radio" id="physics2" value="physics2"><label for="physics2">4年生</label>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <button class="accordionBtn children" type="button">化学生命工学</button>
+                                    <ul>
+                                        <input type="radio" name="dentsu" class="radio" id="chemical0" value="chemical0"><label for="chemical0">2年生</label><br>
+                                        <input type="radio" name="dentsu" class="radio" id="chemical1" value="chemical1"><label for="chemical1">3年生</label><br>
+                                        <input type="radio" name="dentsu" class="radio" id="chemical2" value="chemical2"><label for="chemical2">4年生</label>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <button class="accordionBtn middle" type="button">夜間主</button>
+                            <ul>
+                                <input type="radio" name="dentsu" class="radio" id="dentsu7" value="dentsu7"><label for="dentsu7">1年生</label><br>
+                                <input type="radio" name="dentsu" class="radio" id="dentsu8" value="dentsu8"><label for="dentsu8">2年生</label><br>
+                                <input type="radio" name="dentsu" class="radio" id="dentsu9" value="dentsu9"><label for="dentsu9">3年生</label><br>
+                                <input type="radio" name="dentsu" class="radio" id="dentsu10" value="dentsu10"><label for="dentsu10">4年生</label><br>
+                            </ul>
+                        </li>
+                        <li>
+                            <button class="accordionBtn middle" type="button">大学院</button>
+                            <ul>
+                                <li>
+                                    <button class="accordionBtn children" type="button">情報学専攻</button>
+                                    <ul>
+                                        <input type="radio" name="dentsu" class="radio" id="info0" value="info0"><label for="info0">修士1年生</label><br>
+                                        <input type="radio" name="dentsu" class="radio" id="info1" value="info1"><label for="info1">修士2年生</label><br>
+                                        <input type="radio" name="dentsu" class="radio" id="info2" value="info2"><label for="info2">博士1年生</label><br>
+                                        <input type="radio" name="dentsu" class="radio" id="info3" value="info3"><label for="info3">博士2年生</label><br>
+                                        <input type="radio" name="dentsu" class="radio" id="info4" value="info4"><label for="info4">博士3年生</label>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <button class="accordionBtn children" type="button">情報・ネットワーク工学専攻</button>
+                                    <ul>
+                                        <input type="radio" name="dentsu" class="radio" id="network0" value="network0"><label for="network0">修士1年生</label><br>
+                                        <input type="radio" name="dentsu" class="radio" id="network1" value="network1"><label for="network1">修士2年生</label><br>
+                                        <input type="radio" name="dentsu" class="radio" id="network2" value="network2"><label for="network2">博士1年生</label><br>
+                                        <input type="radio" name="dentsu" class="radio" id="network3" value="network3"><label for="network3">博士2年生</label><br>
+                                        <input type="radio" name="dentsu" class="radio" id="network4" value="network4"><label for="network4">博士3年生</label>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <button class="accordionBtn children" type="button">機械知能システム学専攻</button>
+                                    <ul>
+                                        <input type="radio" name="dentsu" class="radio" id="mechanicalIntelligence0" value="mechanicalIntelligence0"><label for="mechanicalIntelligence0">修士1年生</label><br>
+                                        <input type="radio" name="dentsu" class="radio" id="mechanicalIntelligence1" value="mechanicalIntelligence1"><label for="mechanicalIntelligence1">修士2年生</label><br>
+                                        <input type="radio" name="dentsu" class="radio" id="mechanicalIntelligence2" value="mechanicalIntelligence2"><label for="mechanicalIntelligence2">博士1年生</label><br>
+                                        <input type="radio" name="dentsu" class="radio" id="mechanicalIntelligence3" value="mechanicalIntelligence3"><label for="mechanicalIntelligence3">博士2年生</label><br>
+                                        <input type="radio" name="dentsu" class="radio" id="mechanicalIntelligence4" value="mechanicalIntelligence4"><label for="mechanicalIntelligence4">博士3年生</label>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <button class="accordionBtn children" type="button">基盤理工学専攻</button>
+                                    <ul>
+                                        <input type="radio" name="dentsu" class="radio" id="foundation0" value="foundation0"><label for="foundation0">修士1年生</label><br>
+                                        <input type="radio" name="dentsu" class="radio" id="foundation1" value="foundation1"><label for="foundation1">修士2年生</label><br>
+                                        <input type="radio" name="dentsu" class="radio" id="foundation2" value="foundation2"><label for="foundation2">博士1年生</label><br>
+                                        <input type="radio" name="dentsu" class="radio" id="foundation3" value="foundation3"><label for="foundation3">博士2年生</label><br>
+                                        <input type="radio" name="dentsu" class="radio" id="foundation4" value="foundation4"><label for="foundation4">博士3年生</label>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <button class="accordionBtn children" type="button">共同サステイナビリティ研究専攻</button>
+                                    <ul>
+                                        <input type="radio" name="dentsu" class="radio" id="sustainability2" value="sustainability2"><label for="sustainability2">博士1年生</label><br>
+                                        <input type="radio" name="dentsu" class="radio" id="sustainability3" value="sustainability3"><label for="sustainability3">博士2年生</label><br>
+                                        <input type="radio" name="dentsu" class="radio" id="sustainability4" value="sustainability4"><label for="sustainability4">博士3年生</label>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <button class="accordionBtn root" type="button">高校</button>
+                    <ul>
+                        <input type="radio" name="highSchool" class="radio" id="high1" value="high1"><label for="high1">1年生</label><br>
+                        <input type="radio" name="highSchool" class="radio" id="high2" value="high2"><label for="high2">2年生</label><br>
+                        <input type="radio" name="highSchool" class="radio" id="high3" value="high3"><label for="high3">3年生</label>
+                    </ul>
+                </li>
+                <li>
+                    <button class="accordionBtn root" type="button">高専</button>
+                    <ul>
+                        <input type="radio" name="technicalCollege" class="radio" id="tech1" value="tech1"><label for="tech1">1年生</label><br>
+                        <input type="radio" name="technicalCollege" class="radio" id="tech2" value="tech2"><label for="tech2">2年生</label><br>
+                        <input type="radio" name="technicalCollege" class="radio" id="tech3" value="tech3"><label for="tech3">3年生</label><br>
+                        <input type="radio" name="technicalCollege" class="radio" id="tech4" value="tech4"><label for="tech4">4年生</label><br>
+                        <input type="radio" name="technicalCollege" class="radio" id="tech5" value="tech5"><label for="tech5">5年生</label>
+                    </ul>
+                </li>
+                <li>
+                    <button class="accordionBtn root" type="button">他大学</button>
+                    <ul>
+                        <input type="radio" name="university" class="radio" id="univ1" value="univ1"><label for="univ1">1年生</label><br>
+                        <input type="radio" name="university" class="radio" id="univ2" value="univ2"><label for="univ2">2年生</label><br>
+                        <input type="radio" name="university" class="radio" id="univ3" value="univ3"><label for="univ3">3年生</label><br>
+                        <input type="radio" name="university" class="radio" id="univ4" value="univ4"><label for="univ4">4年生</label>
+                    </ul>
+                </li>
+                <li>
+                    <button class="accordionBtn root" type="button">他大学院</button>
+                    <ul>
+                        <input type="radio" name="graduateSchool" class="radio" id="grad1" value="grad1"><label for="grad1">修士1年生</label><br>
+                        <input type="radio" name="graduateSchool" class="radio" id="grad2" value="grad2"><label for="grad2">修士2年生</label><br>
+                        <input type="radio" name="graduateSchool" class="radio" id="grad3" value="grad3"><label for="grad3">博士1年生</label><br>
+                        <input type="radio" name="graduateSchool" class="radio" id="grad4" value="grad4"><label for="grad4">博士2年生</label><br>
+                        <input type="radio" name="graduateSchool" class="radio" id="grad5" value="grad5"><label for="grad5">博士3年生</label>
+                    </ul>
+                </li>
+                <li>
+                    <button class="accordionBtn root" type="button">その他</button>
+                    <ul>
+                        <input type="radio" name="other" class="radio" id="other0" value="other0"><label for="other0">中学校以下</label><br>
+                        <input type="radio" name="other" class="radio" id="other1" value="other1"><label for="other1">社会人</label><br>
+                        <input type="radio" name="other" class="radio" id="other2" value="other2"><label for="other2">その他</label>
+                    </ul>
+                </li>
+            </ul>
+            <object data="./image/map-full-not-allowed.svg" style="height: auto; float: left;" class="showed" id="notAllowed"></object>
+            <object data="./image/map-full.svg" style="height: auto; float: left;" class="closed" id="allowed"></object>
+        </div>
+    </div>
+    <div class="content" id="content-1" style="color: black;">
+        <h2>日本でどの学年に相当するかお答えください。</h2><h2>Please select your grade in Japan.</h2>
+        <div class="input-block">
+            <div class="select-block">
+                学校区分(School Classification):<br>
+                <label class="selectbox-1">
+                    <select id="school-select-3">
+                        <option>選択してください(Please choose one)</option>
+                    </select>
+                </label>
+            </div>
+            <div class="select-block">
+                学年(Grade):<br>
+                <label class="selectbox-1">
+                    <select id="grade-select-3">
+                        <option>選択してください(Please choose one)</option>
+                    </select>
+                </label>
+            </div>
+        </div>
+        <h2>学校所在国</h2><h2>Country where your school is located</h2>
+        <input type="text" class="textbox-2" placeholder="国名を英語で入力してください(Enter the country name in English)"/>
+        <h2>その他(学校名など)</h2><h2>Comment (such as your school name)</h2>
+        <input type="text" class="textbox-2" placeholder="任意(Optional)"/>
+        <button class="button-29" id="submitOverseas">送信する(Submit)</button>
+    </div>
+    <script src="js/map.js"></script>
+</body>
+
+</html>

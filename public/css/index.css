@@ -1,0 +1,293 @@
+ul{
+    background-color: #35924A;
+    width: 350px;
+    padding: 0;
+    color: #fff;
+    float: left;
+    margin-left:30px;
+}
+  
+li{
+    list-style: none;
+}
+  
+ul ul{
+    height: 0;
+    padding: 0;
+    overflow: hidden;
+    transition: .5s;
+    border-top: 1px solid #67a863;
+    background-color: #5EAA6C;
+    margin:0;
+}
+
+ul li li{
+    border-bottom: 1px dotted #7FBF8B;
+    padding: 10px 0 10px 10px;
+    margin-left:15px;
+}
+
+ul:nth-of-type(1) li.active li:last-child{
+    border-bottom:1px solid #67a863; 
+}
+
+button{
+    position: relative;
+    border: none;
+    width: 100%;
+    background-color: inherit;
+    color: #fff;
+    cursor: pointer;
+    text-align: left;
+    padding: 15px 0 15px 20px;
+    font-size:1em;
+}
+button:hover{
+    background-color: #1A5B27;
+}
+
+button::before,
+button::after{
+    content:"";
+    position: absolute;
+    top: 20px;
+    width: 1.5px;
+    height: 8px;
+    background-color: #fff;
+    transition: .5s;
+}
+
+button::before{
+    transform: rotate(-45deg);
+    right: 35px;
+}
+
+button::after{
+    transform: rotate(45deg);
+    right: 30px;
+}
+
+button[aria-expanded="false"]::before{
+    transform: rotate(-45deg);
+    right: 35px;
+}
+
+button[aria-expanded="false"]::after{
+    transform: rotate(45deg);
+    right: 30px;
+}
+
+button[aria-expanded="true"]::before {
+    transform: rotate(-135deg);
+}
+
+button[aria-expanded="true"]::after {
+    transform: rotate(135deg);
+}
+
+/* li.active button::before{
+    transform: rotate(-135deg);
+    transition:.5s;
+}
+
+li.active button::after{
+    transform: rotate(135deg);
+    transition:.5s;
+} */
+
+ul:nth-of-type(2){ background-color: #357D87; }
+ul:nth-of-type(2) ul{ background-color: #519FA5; border-top: 1px solid #5D9FA8; }
+ul:nth-of-type(2) button:hover{ background-color: #1C4B56; }
+ul:nth-of-type(2) li li{ border-bottom: 1px dotted #73BEBF; }
+ul:nth-of-type(2) li.active li:last-child{ border-bottom:1px solid #5D9FA8; }
+
+ul.active{ overflow-y: auto; }
+
+.showed{
+    width: 65%;
+    /* display: block; */
+}
+
+.closed{
+    width:0%;
+    /* display: none; */
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* タブのスタイル */
+.tabs {
+    display: flex;
+    flex-direction: row;
+    /* cursor: pointer; */
+    align-items: center;
+    margin-top: 20px;
+    background-color: #f1f1f1;
+    justify-content: center;
+    padding: 10px;
+}
+
+.tab {
+    padding: 10px 20px;
+    background-color: #ddd;
+    border: 1px solid #ccc;
+    margin: 0 5px;
+    cursor: pointer;
+    width: 50%;
+}
+
+.tab:hover {
+    background-color: #bbb;
+}
+.tab.active2:hover {
+    background-color: #4CAF50;
+}
+
+.active2 {
+    background-color: #4CAF50;
+    color: white;
+}
+
+/* コンテンツのスタイル */
+.content {
+    display: none;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-top: 1px solid #ccc;
+}
+
+.tab.active2 {
+    cursor: default;
+}
+
+/* アクティブなタブのコンテンツを表示 */
+.content.active2 {
+    display: block;
+    height: fit-content;
+}
+
+.black-color{
+    color: black;
+}
+
+.overflow-hidden{
+    overflow: hidden;
+}
+
+.input-block {
+    display: flex;
+    flex-direction: column;
+}
+
+.select-block {
+    margin-bottom: 16px;
+}
+
+select, label {
+    height: 32px;
+    font-size: 14px;
+}
+
+.selectbox-1 {
+    position: relative;
+}
+
+.selectbox-1::before,
+.selectbox-1::after {
+    position: absolute;
+    content: '';
+    pointer-events: none;
+}
+
+.selectbox-1::before {
+    display: inline-block;
+    right: 0;
+    width: 2.8em;
+    height: 2.8em;
+    border-radius: 0 3px 3px 0;
+    background-color: #2589d0;
+}
+
+.selectbox-1::after {
+    position: absolute;
+    top: 50%;
+    right: 1.4em;
+    transform: translate(50%, -50%) rotate(45deg);
+    width: 6px;
+    height: 6px;
+    border-bottom: 3px solid #fff;
+    border-right: 3px solid #fff;
+}
+
+.selectbox-1 select {
+    appearance: none;
+    min-width: 230px;
+    height: 2.8em;
+    padding: .4em 3.6em .4em .8em;
+    border: none;
+    border-radius: 3px;
+    background-color: #f2f2f2;
+    color: #333;
+    font-size: 1em;
+    cursor: pointer;
+}
+
+.selectbox-1 select:focus {
+    outline: 2px solid #2589d0;
+}
+
+.textbox-2 {
+    width: 80%;
+    padding: 8px 10px;
+    border: 1px solid #d2d2d2;
+    border-radius: 3px;
+    background: #f2f2f2;
+    color: #333;
+    font-size: 1em;
+    line-height: 1.5;
+}
+
+.textbox-2::placeholder {
+    color: #999;
+}
+
+.button-29 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    width: 250px;
+    margin:30px auto;
+    padding: .9em 2em;
+    overflow: hidden;
+    border: 1px solid #2589d0;
+    border-radius: 5px;
+    background-color: #fff;
+    color: #2589d0;
+    font-size: 1em;
+}
+
+.button-29:hover {
+    background-color: transparent;
+    color: #fff;
+}
+
+.button-29::before {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    width: 0;
+    height: 100%;
+    background-color: #2589d0;
+    content: '';
+    transition: width .3s ease;
+}
+
+.button-29:hover::before {
+    width: 100%;
+}
